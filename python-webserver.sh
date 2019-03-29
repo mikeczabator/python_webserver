@@ -25,7 +25,10 @@ def start():
         print("\n**********************\nserving at port: ", PORT,"\n**********************\n")
 
         while True:
-            httpd.handle_request()
+                try:
+                        httpd.handle_request()
+                except:
+                        logging.error("bad request!")
 
 if __name__ == "__main__":
         import logging
