@@ -1,2 +1,2 @@
 # python_webserver
-lightweight python webserver
+lightweight python webserver with logging
